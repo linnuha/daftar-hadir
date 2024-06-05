@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Hadir</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div id="authContainer" class="text-center">
+            <img src="RAS.png" alt="Logo" class="logo mb-3">
+            <h1>Daftar Hadir Rapat</h1>
+            <form id="authForm" class="mt-4">
+                <div class="form-group">
+                    <input type="password" id="password" class="form-control" placeholder="Masukkan Password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Masuk</button>
+            </form>
+        </div>
+        <div id="attendanceContainer" class="text-center" style="display: none;">
+            <img src="RAS.png" alt="Logo" class="logo mb-3">
+            <h1>Daftar Hadir</h1>
+            <form id="attendanceForm" class="mt-4">
+                <div class="form-group">
+                    <input type="text" id="name" class="form-control" placeholder="Nama" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Tambah</button>
+            </form>
+            <ul id="attendanceList" class="list-group mt-4"></ul>
+            <button id="exportBtn" class="btn btn-success mt-4">Ekspor ke Excel</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
